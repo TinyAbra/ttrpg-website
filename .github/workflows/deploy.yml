@@ -1,21 +1,39 @@
+name: Deploy Quartz site
+
 on:
   push:
     branches:
     - 'v4'  
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  my-instances:
+  build:
     runs-on: ubuntu-latest
-    name: Deploy Repo
-    env:
-      OCI_VM_HOST: ${{ secrets.OCI_VM_HOST }}
-      OCI_VM_PRIVATE_KEY: $${{ secrets.OCI_VM_PRIVATE_KEY }}
     steps:
-      - name: Deploy
-        uses: D3rHase/ssh-command-action@latest
+      - uses: actions/checkout@v3
+        with: 
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
         with:
-          host: ${{ secrets.OCI_VM_HOST }}
-          user: ubuntu
-          private_key: ${{ secrets.OCI_VM_PRIVATE_KEY }}
-          command: |
-            echo 'Hello world'
+          node-version: 18.14
+      - name: Install Dependencies
+        run: npm cli
+      - name: Build Quartz
+        run: npx quartz build
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: pubic
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github pages
+        id: deployment
+        uses: actions/deploy-pages@v2
