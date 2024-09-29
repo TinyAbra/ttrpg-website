@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+    - 'v4'  
+
+jobs:
+  my-instances:
+    runs-on: ubuntu-latest
+    name: Deploy Repo
+    env:
+      OCI_VM_HOST: ${{ }}
+      OCI_VM_PRIVATE_KEY: $${{ }}
+    steps:
+      - name: Deploy
+        uses: D3rHase/ssh-command-action@latest
+        with:
+          host: ${{ secrets.OCI_VM_HOST }}
+          user: ubuntu
+          private_key: ${{ secrets.OCI_VM_PRIVATE_KEY }}
+          command: |
+            echo 'Hello world'
