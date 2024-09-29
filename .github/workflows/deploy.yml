@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy Repo
     env:
-      OCI_VM_HOST: ${{ }}
-      OCI_VM_PRIVATE_KEY: $${{ }}
+      OCI_VM_HOST: ${{ secrets.OCI_VM_HOST }}
+      OCI_VM_PRIVATE_KEY: $${{ secrets.OCI_VM_PRIVATE_KEY }}
     steps:
       - name: Deploy
         uses: D3rHase/ssh-command-action@latest
