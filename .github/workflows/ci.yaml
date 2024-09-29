@@ -1,12 +1,13 @@
 name: Build and Test
 
 on:
-  pull_request:
-    branches:
-      - v4
+  #comment out and changed from v4 to main to disable run
+  #pull_request:
+  #  branches:
+  #    - v4
   push:
     branches:
-      - v4
+      - main
   workflow_dispatch:
 
 jobs:
