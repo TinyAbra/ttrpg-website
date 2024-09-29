@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: TTRPG Wiki
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+This site is intended to host Quartz vaults for interactive, easily updatable wiki pages for the various TTRPG games our group runs.
+See the [ReadMe](https://github.com/TinyAbra/ttrpg-website) for how to get started.
