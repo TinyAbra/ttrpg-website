@@ -1,4 +1,4 @@
-## Pre-Requisitions:
+## Prerequisites:
 
 Create a Github account
 1. Head over [Github](https://github.com/) to create an account.
