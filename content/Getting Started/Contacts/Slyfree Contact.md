@@ -1,3 +1,2 @@
-**slyfree3**
-[[https://github.com/Slyfree3|Github]]
+[[https://github.com/Slyfree3|Github]] <br/>
 Discord: @slyfree3

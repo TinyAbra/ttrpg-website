@@ -8,10 +8,21 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/TinyAbra/ttrpg-website",
     },
   }),
+}
+
+const tagsToRemove = ["graph-exclude"]
+const graphConfig = {
+  localGraph: {
+    removeTags: tagsToRemove,
+    excludeTags: tagsToRemove
+  },
+  globalGraph: {
+    removeTags: tagsToRemove,
+    excludeTags: tagsToRemove
+  }
 }
 
 // components for pages that display a single page (e.g. a single note)
