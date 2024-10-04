@@ -23,7 +23,7 @@ const graphConfig = {
     removeTags: tagsToRemove,
     excludeTags: tagsToRemove
   }
-}
+};
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
@@ -56,13 +56,24 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta(), Component.TagList()],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.Explorer({
+      folderClickBehavior: "link", 
+      filterFn: (node) => node.name !== "templates",
+    })),
   ],
-  right: [],
+  right: [
+    Component.MobileOnly(Component.Explorer({
+      folderClickBehavior: "link", 
+      filterFn: (node) => node.name !== "templates",
+    })),
+    Component.DesktopOnly(Component.Graph(graphConfig)),
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks(),
+  ],
 }
