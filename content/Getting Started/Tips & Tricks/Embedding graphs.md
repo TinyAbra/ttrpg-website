@@ -24,4 +24,5 @@ class A,B,C internal-link
 
 Syntax reference: https://mermaid.js.org/intro/syntax-reference.html
 
+---
 #tips
