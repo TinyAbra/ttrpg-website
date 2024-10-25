@@ -23,6 +23,6 @@ Professors:
 [[Jason T'saro]] (Niord; Student Trainee)
 
 ###### Medical: 
-[[Yu-an of Doth]] (Niord; Doctor)
+[[Yu-An of Doth]] (Niord; Doctor)
 [[Jonas of Reven]] (Niord/Jask; 6th year)
 
