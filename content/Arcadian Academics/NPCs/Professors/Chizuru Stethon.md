@@ -8,8 +8,11 @@ The mild-mannered mathematics teacher that runs the Study Hall.
 ### Allies:
 
 [[Laika Saero]]
+
 [[Rassit of Doth]]
+
 [[Demid Romerus]]
+
 [[Aldwich Lisk]]
 
 

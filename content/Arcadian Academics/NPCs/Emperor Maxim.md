@@ -1,0 +1,1 @@
+Niordu's current Emporer, responsible for Niordu's external affairs. Father of four children, one of which ([[Yvonna]]) with the current Empress. 

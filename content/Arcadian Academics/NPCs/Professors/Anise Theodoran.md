@@ -10,8 +10,11 @@ Professor Anise Theodoran is the master of the academy's forges. Her small statu
 
 ### Allies:
 [[Headmaster Mishra]]
+
 [[Maia & Lilo of Doth]]
+
 [[Arushi Theo]]
+
 [[Theojman of Romerus]]
 
 

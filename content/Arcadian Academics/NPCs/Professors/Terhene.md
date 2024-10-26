@@ -9,7 +9,9 @@ The Academy's leading botanist Terhene hails from the far north in Tanjis. He fr
 
 ### Allies:
 [[Yu-An of Doth]]
+
 [[Hanoko Bevan]]
+
 [[Lou Kyran]]
 
 

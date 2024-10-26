@@ -10,5 +10,6 @@ The no-nonsense head of the Academy's medical facilities, Yu-An is rarely seen o
 
 ### Allies:
 [[+Faculty Staff]]
+
 [[Emperor Maxim]]
 

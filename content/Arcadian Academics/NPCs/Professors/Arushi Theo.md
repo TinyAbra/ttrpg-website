@@ -10,9 +10,14 @@ Professor of Enchanting & Engraving, Arushi is a clear native of Arazi. Scales i
 
 ### Allies:
 [[Headmaster Mishra]]
+
 [[Anise Theodoran]]
+
 [[Leopold T'saro]]
+
 [[Rassit of Doth]]
+
 [[Yu-An of Doth]] 
+
 [[Jonas of Reven]]
 
