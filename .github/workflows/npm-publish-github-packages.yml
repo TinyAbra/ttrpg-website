@@ -4,8 +4,7 @@
 name: Publish package to GitHub Packages
 
 on:
-  workflow_run:
-    workflows: ["Deploy Quartz site"]
+  workflow_dispatch:
 
 jobs:
   build:
