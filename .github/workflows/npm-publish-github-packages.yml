@@ -4,8 +4,8 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  workflow_run:
+    workflows: ["Deploy Quartz site"]
 
 jobs:
   build:
