@@ -26,10 +26,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20.9.0
-      - name: Increment Version
-        run: npm version patch
       - name: Install Dependencies
         run: npm ci
+      - name: Setup git
+        run: |
+          git config --global user.email "ghactions@bot.com"
+          git config --global user.name "ghactions"
+      - name: Increment Version
+        run: npm version patch      
       - name: Build Quartz
         run: npx quartz build
       - name: Upload Artifact
