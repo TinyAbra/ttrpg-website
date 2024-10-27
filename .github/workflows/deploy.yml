@@ -45,6 +45,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   publish-tag:
+    needs: deploy
     runs-on: ubuntu-latest
     permissions:
       contents: write
